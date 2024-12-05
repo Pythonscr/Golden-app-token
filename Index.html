@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Ape Token (GAT)</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #000; /* Black background */
+            color: #fff;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-bottom: 2px solid #ffc107;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffc107;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #ffc107;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(to right, #000, #111);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            animation: slideIn 2s ease-out;
+        }
+
+        .hero p {
+            margin: 20px 0;
+            font-size: 1.2em;
+            animation: fadeIn 3s ease-in;
+        }
+
+        .hero button {
+            background: #ffc107;
+            color: #000;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+
+        .hero button:hover {
+            background: #ff5722;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            animation: fadeIn 1s ease-in;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-top: 2px solid #ffc107;
+        }
+
+        /* Animations */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Logo Animation */
+        .animated-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            height: 150px;
+            background: url('golden-monkey-logo.png') no-repeat center/contain;
+            animation: spin 8s infinite linear;
+            opacity: 0.3;
+        }
+
+        @keyframes spin {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        form input, form textarea, form button {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+        }
+
+        form button {
+            background-color: #ffc107;
+            color: #000;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #ff5722;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Golden Ape Token</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#roadmap">Roadmap</a>
+            <a href="#tokenomics">Tokenomics</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="animated-logo"></div>
+
+    <section id="home" class="hero">
+        <h1>Empowering the Future of Decentralized Finance</h1>
+        <p>Golden Ape Token (GAT): A premium cryptocurrency for DeFi, NFTs, and metaverse ecosystems.</p>
+        <button onclick="alert('Redirecting to Buy Page')">Buy GAT</button>
+        <button onclick="alert('Joining the Community')">Join Community</button>
+    </section>
+
+    <section id="about">
+        <h2>About Golden Ape Token</h2>
+        <p>Golden Ape Token represents strength, value, and innovation in the blockchain space.</p>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li>DeFi Integration: Stake, lend, and earn rewards.</li>
+            <li>NFT Marketplace: Exclusive premium NFT access.</li>
+            <li>Metaverse Currency: Powering virtual economies.</li>
+        </ul>
+    </section>
+
+    <section id="roadmap">
+        <h2>Roadmap</h2>
+        <ul>
+            <li>Q1 2024: Token Launch & Community Building</li>
+            <li>Q2 2024: NFT Marketplace Integration</li>
+            <li>Q3 2024: Cross-Chain Bridge Deployment</li>
+            <li>Q4 2024: Global Marketing Campaign</li>
+        </ul>
+    </section>
+
+    <section id="tokenomics">
+        <h2>Tokenomics</h2>
+        <p><strong>Total Supply:</strong> 1 Billion Tokens</p>
+        <ul>
+            <li>50% Public Sale</li>
+            <li>20% Staking Rewards</li>
+            <li>20% Ecosystem Growth</li>
+            <li>10% Team & Advisors</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Golden Ape Token. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Simple form submission alert
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+            alert(`Thank you for reaching out! Email: ${email}, Message: ${message}`);
+        });
+    </script>
+</body>
+</html>
